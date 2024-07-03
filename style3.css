@@ -1,0 +1,143 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #9acd32;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.recipe-container {
+    background-color: #9acd32;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    padding: 30px;
+    margin: auto;
+    position: relative; /* Position relative untuk container gambar */
+}
+
+.recipe-container::before {
+    content: '';
+    position: absolute;
+    top: 300px;
+    left: calc(80% - 80px); /* Menengahkan gambar */
+    width: 150px;
+    height: 150px;
+    background-image: url('landingpage makanan/kangkung.jpg'); /* Ubah path sesuai dengan lokasi gambar Anda */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+ul, ol {
+    margin-left: 20px;
+    padding-left: 10px;
+}
+
+ul li, ol li {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #666;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+/* Style for list items */
+li {
+    margin-bottom: 10px;
+}
+
+/* Hover effect for list items */
+li:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Style for the container */
+.recipe-container {
+    background: linear-gradient(to bottom right, #ffffff, #f1f8ff);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Style for the title */
+h1 {
+    font-size: 32px;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+/* Style for the list items */
+ul, ol {
+    margin-left: 20px;
+    padding-left: 10px;
+}
+
+li {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555555;
+}
+
+/* Hover effect for list items */
+li:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Style for paragraphs */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555555;
+    margin-bottom: 15px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .recipe-container {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 28px;
+    }
+    p {
+        font-size: 16px;
+    }
+    ul, ol {
+        font-size: 16px;
+    }
+}
